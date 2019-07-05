@@ -1,0 +1,17 @@
+// assets and script style addons
+@import "libs/magnific-popup.scss";
+@import "libs/slick.scss";
+
+// global styles
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
+@import "fonts.scss";
+@import "svg_sprite.scss";
+
+// BEM blocks
+@import "../../blocks/accordion/accordion.scss";
+@import "../../blocks/elastic-tabs/elastic-tabs.scss";
+@import "../../blocks/tabs/tabs.scss";
+@import "../../blocks/modal/modal.scss";

@@ -1,0 +1,8 @@
+// В этом файле должны быть стили для БЭМ-блока background-svg-head_ice, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.background-svg-head_ice {
+  overflow: inherit;
+}

@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока product-description, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.product-description {
+  margin-top: 80px;
+  max-width: 480px;
+}
+
+.product-description__title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.product-description__text {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #818181;
+}

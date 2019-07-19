@@ -1,0 +1,15 @@
+// В этом файле должны быть стили для БЭМ-блока button, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.button {
+  background-color: #108AF9;
+  width: 250px;
+  height: 50px;
+  color: #ffffff!important;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+  padding: 16px 37px;
+}

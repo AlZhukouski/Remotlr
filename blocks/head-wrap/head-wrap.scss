@@ -1,0 +1,10 @@
+// В этом файле должны быть стили для БЭМ-блока head-wrap, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.head-wrap {
+  @include container;
+  position: relative;
+  z-index: 1;
+}

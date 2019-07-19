@@ -22,6 +22,16 @@
 	height: 8px;
 }
 
+._svg-icon-logo--img-- {
+	@extend %svg-common;
+	background-position: 45.070422535211264% 84.28571428571429%;
+}
+
+._svg-icon-logo--img---dims {
+	width: 25px;
+	height: 21px;
+}
+
 ._svg-icon-tabs--img--design {
 	@extend %svg-common;
 	background-position: 0 45.76271186440678%;

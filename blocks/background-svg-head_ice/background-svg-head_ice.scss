@@ -5,4 +5,6 @@
 
 .background-svg-head_ice {
   overflow: inherit;
+  z-index: -100;
+  transform: translateY(-30vw);
 }

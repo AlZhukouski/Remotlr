@@ -22,9 +22,19 @@
 	height: 8px;
 }
 
+._svg-icon-head--img--laptop {
+	@extend %svg-common;
+	background-position: 50% 0;
+}
+
+._svg-icon-head--img--laptop-dims {
+	width: 32px;
+	height: 20.85px;
+}
+
 ._svg-icon-logo--img-- {
 	@extend %svg-common;
-	background-position: 45.070422535211264% 84.28571428571429%;
+	background-position: 45.070422535211264% 99.52857142857142%;
 }
 
 ._svg-icon-logo--img---dims {
@@ -44,7 +54,7 @@
 
 ._svg-icon-tabs--img--gardening {
 	@extend %svg-common;
-	background-position: 50% 0;
+	background-position: 50% 45.76271186440678%;
 }
 
 ._svg-icon-tabs--img--gardening-dims {
@@ -84,7 +94,7 @@
 
 ._svg-icon-tabs--img--vicons {
 	@extend %svg-common;
-	background-position: 50% 39.83567782895556%;
+	background-position: 50% 73.4470309971368%;
 }
 
 ._svg-icon-tabs--img--vicons-dims {

@@ -176,8 +176,10 @@ $media-direction: max !default;
 
 // Миксин для ограничения контейнера блока
 @mixin container {
-	width: 100%;
 	max-width: 1175px;
 	margin: 0 auto;
 	box-sizing: border-box;
+	@include media((
+					margin: (480: 0 15px, 768: 0 35px, 1325: 0 75px)
+	));
 }

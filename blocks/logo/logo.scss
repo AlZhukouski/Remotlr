@@ -5,10 +5,13 @@
 
 .logo__wrap {
   margin-top: 70px;
+  @include media((
+          margin-top: (320: 20px,768: 45px)
+  ));
 }
 .logo__link{
   cursor: pointer;
-  color: #000000;
+  color: #1D2B4C;
   display: flex;
   align-items: center;
 

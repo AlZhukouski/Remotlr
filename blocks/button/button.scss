@@ -4,12 +4,19 @@
 @import "../../assets/styles/mixins.scss";
 
 .button {
+  display: inline-block;
   background-color: #108AF9;
-  width: 250px;
+  width: 215px;
   height: 50px;
   color: #ffffff!important;
   text-align: center;
   vertical-align: middle;
   border-radius: 5px;
   padding: 16px 37px;
+  &:hover{
+    background-color: #387DBB;
+  }
+  &:active{
+    background-color: #0558A2;
+  }
 }

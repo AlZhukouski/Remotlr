@@ -4,7 +4,7 @@
 @import "../../assets/styles/mixins.scss";
 
 .background-svg-head_ice {
-  overflow: inherit;
+  overflow: visible;
   z-index: -100;
-  transform: translateY(-30vw);
+  margin-top: -30vw;
 }

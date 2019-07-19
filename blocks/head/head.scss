@@ -1,0 +1,17 @@
+// В этом файле должны быть стили для БЭМ-блока head, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.head{
+  max-width: 1427px;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.head-wrap {
+  color: black;
+  @include container;
+  position: relative;
+  z-index: 1;
+}

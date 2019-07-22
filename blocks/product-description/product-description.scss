@@ -28,11 +28,11 @@
 }
 
 .product-description__text {
+  position: relative;
   margin: 30px 0 40px;
   font-size: 20px;
   line-height: 30px;
   color: #818181;
-  position: relative;
   font-weight: 300;
 
   &:after {
@@ -45,8 +45,7 @@
     height: 37.21vw;
     max-width: 932px;
     max-height: 531px;
-    background: url("../img/laptop.svg") no-repeat center right;
-    background-size: 100% 100%;
+    background: url("../img/laptop.svg") no-repeat center right/100% 100%;
 
     @include media((
             left: (768: 43vw, min-1427: 420px),

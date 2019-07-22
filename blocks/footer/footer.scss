@@ -1,9 +1,6 @@
-// В этом файле должны быть стили для БЭМ-блока page, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока footer, его элементов, 
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
 @import "../../assets/styles/variables.scss";
 @import "../../assets/styles/mixins.scss";
 
-.page {
-  color: #818181;
-  background-color: rgba(0,0,0,0.1);
-}
+.footer {}

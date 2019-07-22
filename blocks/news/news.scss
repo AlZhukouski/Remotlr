@@ -1,0 +1,165 @@
+// В этом файле должны быть стили для БЭМ-блока news, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.news {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+
+
+}
+
+.news__container {
+  overflow: hidden;
+}
+
+.news__header {
+  display: flex;
+  justify-content: space-between;
+
+  @include media((
+          flex-direction: (680: column),
+          justify-content:(680: center)
+  ));
+}
+
+.news__header-wrap {
+  max-width: 400px;
+  align-self: center;
+}
+
+.news__header-wrap:last-child {
+  @include media((
+         margin-top: (680: 30px)
+  ));
+}
+
+.news__header-title {
+  position: relative;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: -35px;
+    display: inline-block;
+    width: 128px;
+    height: 93px;
+    background: url("../img/news.svg") no-repeat center/100% 100%;
+
+    /*@include media((
+            left: (768: 43vw, min-1427: 420px),
+            bottom: (768: calc(-200px - 11vw)),
+            width:(768: 400px),
+            height: (768: 228px)
+    ));*/
+  }
+}
+
+.news__header-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.news__header-arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin: 0 7px;
+
+  & span {
+    font-size: 26px;
+    padding-bottom: 3px;
+  }
+}
+
+.news__content {
+  margin-top: 50px;
+
+  @include media((
+          width: (min-1350: 1500px)
+  ));
+}
+
+// отступы между слайдами
+.slick-slide {
+  margin: 0 30px;
+}
+/* the parent */
+.slick-list {
+  margin: 0 -30px;
+}
+
+.news__item {
+  margin-right: auto;
+  margin-left: auto;
+  width: 270px;
+  height: 400px;
+  background-color: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+}
+
+.news__item--img {
+  width: 270px;
+  height: 195px;
+  object-fit: cover;
+}
+
+.news__item-wrap {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.news__item-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #080808;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.news__item-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #818181;
+  margin-bottom: 20px;
+}
+
+.news__item-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #108AF9;
+}

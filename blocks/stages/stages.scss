@@ -1,0 +1,108 @@
+// В этом файле должны быть стили для БЭМ-блока stages, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.stages {
+  @include container;
+  display: flex;
+  padding-top: 30px;
+
+  @include media((
+          flex-direction: (650: column),
+          align-items: (650: center)
+  ));
+}
+
+.stages__section {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include media((
+          flex-direction: (1320: column),
+          align-items: (1320: center),
+          width: (650: 100%)
+  ));
+
+}
+
+.stages__section:first-child {
+  margin-right: 30px;
+  @include media((
+          margin-right: (650: 0)
+  ));
+}
+
+.stages__section:first-child .stages__item:last-child {
+  margin-left: auto;
+  @include media((
+          margin-left: (1320: 0)
+  ));
+}
+
+.stages__section:last-child {
+  transform: translateY(-80px);
+  @include media((
+          transform: (900: translateY(0px))
+  ));
+}
+
+.stages__section:last-child .stages__item:first-child {
+  margin-right: 10%;
+  @include media((
+          margin-right: (1320: 0)
+  ));
+}
+
+.stages__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 0 25px;
+  width: 270px;
+  height: 230px;
+  box-shadow: 0px 15px 75px rgba(0, 0, 0, 0.22);
+  border-radius: 13.5px;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.stages__counter {
+  position: absolute;
+  left: 20px;
+  top: -50px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 178px;
+  line-height: 237px;
+  letter-spacing: -0.02em;
+  color: #080808;
+  opacity: 0.07;
+}
+
+.stages__counter--num-six{
+  top: -25px;
+}
+
+.stages__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #108AF9;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.stages__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #818181;
+}

@@ -7,31 +7,37 @@
   @include container;
 }
 
-/*.features__title {
+.features__title {
   position: relative;
   font-family: 'Playfair Display', serif;
   font-size: 42px;
   font-weight: bold;
+  color: #1D2B4C;
+  margin-bottom: 25px;
 
   &:before {
     content: "";
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -45px;
+    top: -40px;
     display: inline-block;
-    width: 150px;
-    height: 150px;
-    background: url("../img/features__title.svg") no-repeat center;
-    background-size: 100% 100%;
-    !*@include media((
+    width: 140px;
+    height: 110px;
+    background: url("../img/features__title.svg") no-repeat center center /100% 100%;
+
+    /*@include media((
             left: (768: 43vw, min-1427: 420px),
             bottom: (768: calc(-200px - 11vw)),
             width:(768: 400px),
             height: (768: 228px)
-    ));*!
+    ));*/
   }
-}*/
+}
 
 .features__text {
-  max-width: 390px;
+  max-width: 400px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #818181;
+  font-weight: 300;
 }

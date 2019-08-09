@@ -4,10 +4,11 @@
 @import "../../assets/styles/mixins.scss";
 
 .head{
-  max-width: 1427px;
+  max-width: 1475px;
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 .head-wrap {
   color: black;

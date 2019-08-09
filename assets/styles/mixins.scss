@@ -177,9 +177,11 @@ $media-direction: max !default;
 // Миксин для ограничения контейнера блока
 @mixin container {
 	max-width: 1175px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	box-sizing: border-box;
 	@include media((
-					margin: (480: 0 15px, 768: 0 35px, 1325: 0 75px)
+					margin-left: (480: 15px, 768: 35px, 1325: 75px),
+					margin-right: (480: 15px, 768: 35px, 1325: 75px)
 	));
 }

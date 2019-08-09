@@ -1,0 +1,41 @@
+// В этом файле должны быть стили для БЭМ-блока content-bg, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.content-bg {
+  @include container;
+  position: relative;
+  top: -400px;
+  width: 100%;
+  z-index: -2;
+  @include media((
+          margin-left: (480: 0px, 768: 0px, 1325: 0px),
+          margin-right: (480: 0px, 768: 0px, 1325: 0px)
+  ));
+  @media (min-width: 1175px) {
+    max-width: 1475px;
+  }
+}
+
+.content-bg--z-0 {
+  z-index: 0;
+}
+
+.content-bg__wrap {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 60%;
+  overflow: hidden;
+  height: 1426px;
+}
+
+.content-bg__img {
+  display: block;
+  width: 887px;
+  height: 1426px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

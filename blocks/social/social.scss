@@ -1,0 +1,47 @@
+// В этом файле должны быть стили для БЭМ-блока social, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.social__wrap {
+  width: 285px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.social__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  &:hover {
+    background-color: #ffffff;
+    .social__item-fb {
+      fill: #1877f2;
+    }
+    .social__item-tw {
+      fill: #4bc8e6;
+    }
+    .social__item-inst {
+      /* gradient and fallback color */
+      fill: url(#my-cool-gradient) #447799;
+    }
+    .social__item-mail {
+      fill : #d23f31;
+    }
+
+  }
+}
+
+

@@ -5,6 +5,13 @@
 
 .background-svg-head_ice {
   overflow: visible;
-  z-index: -100;
-  margin-top: -30vw;
+  position: relative;
+  z-index: -3;
+  margin-top: calc(-30vw - 90px);
+  max-width: 1375px;
+  max-height: 700px;
+
+  @media (min-width: 1325px) {
+    margin-top: -485px;
+  }
 }

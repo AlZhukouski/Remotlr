@@ -1,0 +1,36 @@
+// В этом файле должны быть стили для БЭМ-блока bg-ice-bottom, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий
+@import "../../assets/styles/variables.scss";
+@import "../../assets/styles/mixins.scss";
+
+.bg-ice-bottom {
+  position: relative;
+  width: 100%;
+  max-width: 1475px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 40px;
+  margin-top: -40px;
+}
+
+.bg-ice-bottom__img-1 {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translate(calc(-50% + 230px),0);
+  height: 2155px;
+  width: 2487px;
+  z-index: -1;
+}
+
+.bg-ice-bottom__img2-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.bg-ice-bottom__img-2 {
+  position: absolute;
+  top: -140px;
+  left: -200px;
+  z-index: -1;
+}

@@ -32,6 +32,8 @@
 }
 
 .news__header-wrap:last-child {
+  z-index: 2;
+
   @include media((
          margin-top: (680: 30px)
   ));
@@ -85,9 +87,17 @@
   border-radius: 50%;
   border: 2px solid #ffffff;
   margin: 0 7px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    background-color: #fff;
+    span {
+      color: #1d2b4c;
+    }
+  }
 
   & span {
-    font-size: 26px;
+    font-size: 28px;
     padding-bottom: 3px;
   }
 }
@@ -120,7 +130,7 @@
   border-radius: 3px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-
+  margin-bottom: 25px;
 }
 
 .news__item--img {
